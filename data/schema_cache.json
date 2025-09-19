@@ -1,0 +1,119 @@
+{
+  "nodes": [
+    "City",
+    "Sight",
+    "Feature",
+    "Restaurant",
+    "Cooking_Style",
+    "Province",
+    "Delicacy",
+    "District",
+    "Line",
+    "Station"
+  ],
+  "relationships": [
+    "LOCATED_IN",
+    "HAS_FEATURE",
+    "HAS_STYLE",
+    "BELONGS_TO",
+    "PART_OF",
+    "OPERATES_IN"
+  ],
+  "properties": {
+    "City": [
+      "name",
+      "gd_lat",
+      "gd_lng",
+      "bd_lng",
+      "bd_lat",
+      "url"
+    ],
+    "Sight": [
+      "comment_number",
+      "remind",
+      "comment_score",
+      "name",
+      "star",
+      "city",
+      "introduction",
+      "city_uid",
+      "price",
+      "city_url",
+      "features",
+      "phone_number",
+      "open_time",
+      "preferential",
+      "open_hours",
+      "address",
+      "heat",
+      "url",
+      "facilities",
+      "position"
+    ],
+    "Feature": [
+      "name"
+    ],
+    "Restaurant": [
+      "service_score",
+      "name",
+      "comment_number",
+      "taste_score",
+      "phone_number",
+      "introduction",
+      "price_average",
+      "open_hours",
+      "city_uid",
+      "city",
+      "address",
+      "comment_score",
+      "cuisine",
+      "city_url",
+      "cooking_style",
+      "environmental_score",
+      "url"
+    ],
+    "Cooking_Style": [
+      "name"
+    ],
+    "Province": [
+      "name",
+      "url"
+    ],
+    "Delicacy": [
+      "name",
+      "introduce",
+      "city",
+      "city_uid",
+      "city_url",
+      "url"
+    ],
+    "District": [
+      "city",
+      "name"
+    ],
+    "Line": [
+      "city",
+      "name",
+      "city_uid"
+    ],
+    "Station": [
+      "line_name",
+      "name",
+      "pinyin",
+      "city",
+      "gd_lat",
+      "poi_id",
+      "gd_lng",
+      "bd_lng",
+      "bd_lat"
+    ]
+  },
+  "relationship_properties": {
+    "LOCATED_IN": [],
+    "HAS_FEATURE": [],
+    "HAS_STYLE": [],
+    "BELONGS_TO": [],
+    "PART_OF": [],
+    "OPERATES_IN": []
+  }
+}

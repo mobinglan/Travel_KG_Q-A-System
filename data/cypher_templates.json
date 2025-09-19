@@ -1,0 +1,32 @@
+{
+  "北京有什么好玩的地方？": {
+    "cypher": "MATCH (s:Sight)-[:LOCATED_IN]->(c:City)\nWHERE c.name = '北京'\nRETURN s.name AS name, s.introduction AS introduction, s.open_hours AS open_hours, s.phone_number AS phone_number, s.comment_score AS comment_score, s.heat AS heat\nORDER BY heat DESC\nLIMIT 5",
+    "validated": true,
+    "usage_count": 1,
+    "last_used": "2025-04-08T04:50:32.263131"
+  },
+  "北京有什么好玩的？": {
+    "cypher": "MATCH (s:Sight)-[:LOCATED_IN]->(c:City)\nWHERE c.name = '北京'\nRETURN s.name AS name, s.heat AS heat, s.open_hours AS open_hours, s.introduction AS introduction\nORDER BY heat DESC\nLIMIT 5",
+    "validated": true,
+    "usage_count": 1,
+    "last_used": "2025-04-09T20:40:55.297213"
+  },
+  "{\"timestamp\": \"2025-04-26T12:15:45.561869\", \"question\": \"\\u5317\\u6d77\\u6709\\u4ec0\\u4e48\\u597d\\u5403\\u7684\\u5e97\\uff1f\", \"error\": \"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 160, in generate_cypher\\n    raise ValueError(\\\"\\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\\")\\nValueError: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\\nDuring handling of the above exception, another exception occurred:\\n\\nTraceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\User_page.py\\\", line 211, in user_page\\n    cypher_query = cypher_chat.generate_cypher(prompt)\\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 165, in generate_cypher\\n    raise RuntimeError(f\\\"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: {str(e)}\\\")\\nRuntimeError: \\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\"}": {
+    "cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '北海'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "validated": true,
+    "usage_count": 1,
+    "last_used": "2025-04-27T12:44:34.738920"
+  },
+  "云南有什么好吃的饭店推荐？": {
+    "cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '云南'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "validated": true,
+    "usage_count": 1,
+    "last_used": "2025-04-27T12:46:43.506267"
+  },
+  "{\"timestamp\": \"2025-04-27T11:50:12.034600\", \"question\": \"\\u5317\\u6d77\\u6709\\u4ec0\\u4e48\\u63a8\\u8350\\u7684\\u9910\\u9986\\uff1f\", \"error\": \"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 160, in generate_cypher\\n    raise ValueError(\\\"\\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\\")\\nValueError: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\\nDuring handling of the above exception, another exception occurred:\\n\\nTraceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\User_page.py\\\", line 170, in user_page\\n    cypher_query = cypher_chat.generate_cypher(prompt)\\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 165, in generate_cypher\\n    raise RuntimeError(f\\\"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: {str(e)}\\\")\\nRuntimeError: \\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\"}": {
+    "cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '云南'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "validated": true,
+    "usage_count": 1,
+    "last_used": "2025-04-27T12:46:28.059414"
+  }
+}

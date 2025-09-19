@@ -1,0 +1,68 @@
+2025-04-25 19:59:02,172 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 19:59:02,174 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 19:59:02,176 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 19:59:02,181 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 19:59:02,213 - ERROR - 导入失败: [Errno 2] No such file or directory: 'D:/地铁.xlsx'
+2025-04-25 20:00:12,535 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 20:00:12,539 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 20:00:12,543 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 20:00:12,547 - WARNING - 约束可能已存在: [Statement.SyntaxError] Invalid input 'F': expected whitespace, comment, UniqueConstraintWithOptionsSyntax, UniqueCompositeConstraintWithOptionsSyntax, NodeKeyConstraintWithOptionsSyntax, NodeProperty
+2025-04-25 20:00:13,694 - INFO - 成功读取Excel文件，共 5042 条记录
+2025-04-25 20:00:14,749 - INFO - 已提交 500 条关系
+2025-04-25 20:00:15,613 - INFO - 已提交 500 条关系
+2025-04-25 20:00:16,688 - INFO - 已提交 500 条关系
+2025-04-25 20:00:17,520 - INFO - 已提交 500 条关系
+2025-04-25 20:00:18,352 - INFO - 已提交 500 条关系
+2025-04-25 20:00:19,157 - INFO - 已提交 500 条关系
+2025-04-25 20:00:19,989 - INFO - 已提交 500 条关系
+2025-04-25 20:00:20,756 - INFO - 已提交 500 条关系
+2025-04-25 20:00:21,642 - INFO - 已提交 503 条关系
+2025-04-25 20:00:22,460 - INFO - 已提交 500 条关系
+2025-04-25 20:00:23,267 - INFO - 已提交 500 条关系
+2025-04-25 20:00:24,113 - INFO - 已提交 500 条关系
+2025-04-25 20:00:24,974 - INFO - 已提交 504 条关系
+2025-04-25 20:00:25,820 - INFO - 已提交 500 条关系
+2025-04-25 20:00:26,656 - INFO - 已提交 500 条关系
+2025-04-25 20:00:27,553 - INFO - 已提交 500 条关系
+2025-04-25 20:00:28,403 - INFO - 已提交 500 条关系
+2025-04-25 20:00:29,250 - INFO - 已提交 500 条关系
+2025-04-25 20:00:30,204 - INFO - 已提交 500 条关系
+2025-04-25 20:00:31,103 - INFO - 已提交 500 条关系
+2025-04-25 20:00:31,997 - INFO - 已提交 501 条关系
+2025-04-25 20:00:32,900 - INFO - 已提交 502 条关系
+2025-04-25 20:00:33,777 - INFO - 已提交 504 条关系
+2025-04-25 20:00:34,709 - INFO - 已提交 501 条关系
+2025-04-25 20:00:35,552 - INFO - 已提交 500 条关系
+2025-04-25 20:00:36,425 - INFO - 已提交 500 条关系
+2025-04-25 20:00:37,300 - INFO - 已提交 500 条关系
+2025-04-25 20:00:38,186 - INFO - 已提交 500 条关系
+2025-04-25 20:00:39,140 - INFO - 已提交 500 条关系
+2025-04-25 20:00:40,031 - INFO - 已提交 503 条关系
+2025-04-25 20:00:40,914 - INFO - 已提交 500 条关系
+2025-04-25 20:00:41,800 - INFO - 已提交 500 条关系
+2025-04-25 20:00:42,749 - INFO - 已提交 500 条关系
+2025-04-25 20:00:43,818 - INFO - 已提交 500 条关系
+2025-04-25 20:00:44,859 - INFO - 已提交 500 条关系
+2025-04-25 20:00:45,949 - INFO - 已提交 500 条关系
+2025-04-25 20:00:46,973 - INFO - 已提交 500 条关系
+2025-04-25 20:00:48,068 - INFO - 已提交 500 条关系
+2025-04-25 20:00:49,159 - INFO - 已提交 500 条关系
+2025-04-25 20:00:50,256 - INFO - 已提交 500 条关系
+2025-04-25 20:00:51,448 - INFO - 已提交 500 条关系
+2025-04-25 20:00:52,561 - INFO - 已提交 501 条关系
+2025-04-25 20:00:53,670 - INFO - 已提交 500 条关系
+2025-04-25 20:00:54,793 - INFO - 已提交 500 条关系
+2025-04-25 20:00:55,873 - INFO - 已提交 503 条关系
+2025-04-25 20:00:56,958 - INFO - 已提交 500 条关系
+2025-04-25 20:00:58,052 - INFO - 已提交 500 条关系
+2025-04-25 20:00:59,179 - INFO - 已提交 501 条关系
+2025-04-25 20:01:00,374 - INFO - 已提交 500 条关系
+2025-04-25 20:01:01,182 - INFO - 已提交 376 条关系
+2025-04-25 20:01:01,183 - INFO - 
+        ========== 导入统计 ==========
+        城市数量: 40
+        行政区数量: 275
+        地铁线路数量: 231
+        站点数量: 4259
+        =============================
+        

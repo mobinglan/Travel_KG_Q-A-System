@@ -1,0 +1,61 @@
+[
+  {
+    "question": "推荐一下北京的比较火的4A和5A景点？",
+    "generated_cypher": "未生成查询",
+    "error_msg": "'list' object has no attribute 'items'",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Sight)-[:LOCATED_IN]->(c:City)\nWHERE c.name = '北京' AND s.star IN ['4A', '5A']\nRETURN s.name AS name, s.heat AS heat, s.star AS star\nORDER BY heat DESC\nLIMIT 5",
+    "feedback_type": "negative"
+  },
+  {
+    "question": "北京有什么好玩的？",
+    "generated_cypher": "未生成查询",
+    "error_msg": "'list' object has no attribute 'items'",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Sight)-[:LOCATED_IN]->(c:City {name: '北京'})\nRETURN s.name AS name, s.heat AS heat\nORDER BY heat DESC\nLIMIT 5",
+    "feedback_type": "negative"
+  },
+  {
+    "question": "云南有什么好吃的饭店推荐？",
+    "generated_cypher": "未生成查询",
+    "error_msg": "'list' object has no attribute 'items'",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '云南'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "feedback_type": "negative"
+  },
+  {
+    "question": "北京有什么好玩的？",
+    "generated_cypher": "未生成查询",
+    "error_msg": "无法生成查询: 'list' object has no attribute 'items'",
+    "status": "pending",
+    "corrected_cypher": null,
+    "feedback_type": "negative"
+  },
+  {
+    "question": "云南有什么好吃的饭店推荐？",
+    "generated_cypher": "MATCH (r:Restaurant)-[:HAS_STYLE]->(cs:Cooking_Style)\nWHERE cs.name = '云南菜'\nRETURN r.name AS RestaurantName, r.price_average AS PriceAverage, r.comment_score AS CommentScore\nORDER BY CommentScore DESC\nLIMIT 5",
+    "error_msg": "用户主动反馈不满意",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '云南'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "feedback_type": "user_dissatisfied",
+    "timestamp": "2025-04-08T04:41:32.461094"
+  },
+  {
+    "question": "{\"timestamp\": \"2025-04-26T12:15:45.561869\", \"question\": \"\\u5317\\u6d77\\u6709\\u4ec0\\u4e48\\u597d\\u5403\\u7684\\u5e97\\uff1f\", \"error\": \"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 160, in generate_cypher\\n    raise ValueError(\\\"\\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\\")\\nValueError: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\\nDuring handling of the above exception, another exception occurred:\\n\\nTraceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\User_page.py\\\", line 211, in user_page\\n    cypher_query = cypher_chat.generate_cypher(prompt)\\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 165, in generate_cypher\\n    raise RuntimeError(f\\\"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: {str(e)}\\\")\\nRuntimeError: \\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\"}",
+    "generated_cypher": "未生成",
+    "error_msg": "RuntimeError: 无法生成查询: 生成的Cypher格式无效",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '北海'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "feedback_type": "system_error",
+    "timestamp": "2025-04-26T12:15:45.579074"
+  },
+  {
+    "question": "{\"timestamp\": \"2025-04-27T11:50:12.034600\", \"question\": \"\\u5317\\u6d77\\u6709\\u4ec0\\u4e48\\u63a8\\u8350\\u7684\\u9910\\u9986\\uff1f\", \"error\": \"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\", \"traceback\": \"Traceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 160, in generate_cypher\\n    raise ValueError(\\\"\\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\\")\\nValueError: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\\nDuring handling of the above exception, another exception occurred:\\n\\nTraceback (most recent call last):\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\User_page.py\\\", line 170, in user_page\\n    cypher_query = cypher_chat.generate_cypher(prompt)\\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \\\"D:\\\\pycharm\\\\pythonProject2\\\\core\\\\Cyher_chat.py\\\", line 165, in generate_cypher\\n    raise RuntimeError(f\\\"\\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: {str(e)}\\\")\\nRuntimeError: \\u65e0\\u6cd5\\u751f\\u6210\\u67e5\\u8be2: \\u751f\\u6210\\u7684Cypher\\u683c\\u5f0f\\u65e0\\u6548\\n\"}",
+    "generated_cypher": "未生成",
+    "error_msg": "RuntimeError: 无法生成查询: 生成的Cypher格式无效",
+    "status": "resolved",
+    "corrected_cypher": "MATCH (s:Restaurant)-[:LOCATED_IN]->(c:City {{name: '云南'}})\nRETURN s.name AS name, s.comment_score AS comment_score\nORDER BY comment_score DESC\nLIMIT 5",
+    "feedback_type": "system_error",
+    "timestamp": "2025-04-27T11:50:12.051593"
+  }
+]
