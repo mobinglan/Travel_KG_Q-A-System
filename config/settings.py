@@ -13,7 +13,7 @@ class Settings:
     # Neo4j配置
     NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
     NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
-    NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "mo301329")
+    NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "XXXXXXXX")
 
     # 领域实体配置
     DOMAIN_ENTITIES = ["attraction", "hotel", "restaurant"]
